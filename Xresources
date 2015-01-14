@@ -1,0 +1,50 @@
+! ~/.Xresources
+
+!  i. top level font settings !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! yes this is already provided by /etc/profile.d/infinality-settings.sh how
+! can I figure out the used dpi? does infinality overwrite this? or vice-versa?
+
+! for apps without fontconfig support, like URxvt. see w.al/Font_Configuration
+
+Xft.autohint:       0
+Xft.lcdfilter:      lcddefault
+Xft.hintstyle:      hintfull
+Xft.antialias:      1
+Xft.rgba:           rgb
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!  ii. urxvt general settings !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+URxvt*scrollBar: false
+URxvt*visualBell: false
+URxvt*saveLines:1000
+
+!  iii. urxvt font settings !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+URxvt*font:             xft:Terminus:pixelsize=16
+URxvt*boldFont:         xft:Terminus:pixelsize=16
+
+URxvt*cursorUnderline:  False
+URxvt*cursorBlink:      True
+
+URxvt*cursorColor:  #9A6666
+URxvt*reverseVideo: True
+URxvt*color0:       #000000
+URxvt*color1:       #A54242
+URxvt*color2:       #8C9440
+URxvt*color3:       #DE935F
+URxvt*color4:       #5F819D
+URxvt*color5:       #85678F
+URxvt*color6:       #5E8D87
+URxvt*color7:       #C5C8C6
+URxvt*color8:       #373B41
+URxvt*color9:       #CC6666
+URxvt*color10:      #B5BD68
+URxvt*color11:      #F0C674
+URxvt*color12:      #81A2BE
+URxvt*color13:      #B294BB
+URxvt*color14:      #8ABEB7
+URxvt*color15:      #EEEEEE 
