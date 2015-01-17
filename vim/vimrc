@@ -1,0 +1,39 @@
+"~/vim/vimrc
+
+set nocompatible
+let mapleader='\'
+set history=50 "lines in command history
+
+""""""""""""""""""""""""""""""""""""""""" BASIC DISPLAY SETTINGS.
+set showcmd ruler
+set number numberwidth=1
+
+""""""""""""""""""""""""""""""""""""""""" LONG LINE STRATEGY
+"see :help edit-no-break
+
+set linebreak "break lines at whole words, rather than characters.
+set showbreak=>> "string shown at the start of a broken line
+
+
+""""""""""""""""""""""""""""""""""""""""" TABS AND INDENTATION.
+" some useful tips from wiki.python.org/moin/Vim
+" but should be pretty useful for all filetypes.
+" ... except c, which needs to have real tabs with a tabwidth of 8.
+" ... fix that later
+
+set ts=8 sts=4 sw=4 sr sw=4 et	
+set autoindent
+set tw=80 "i'd really like this to be filetype sensitive but whatever
+set fo+=t
+
+filetype indent on
+filetype plugin on
+
+syntax enable
+
+if &t_Co == 256
+    colorscheme xoria256
+else
+    colorscheme desert
+endif
+
